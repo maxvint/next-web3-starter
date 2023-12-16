@@ -1,3 +1,5 @@
+import dynamic from 'next/dynamic'
+
 import {
 	Button,
 	Kbd,
@@ -30,7 +32,19 @@ import {
 
 import { Logo } from '@components/icons'
 
+import { useAccount, useConnect, useDisconnect, useEnsAvatar, useEnsName } from 'wagmi'
+import WalletConnect from '@components/wallet-connect'
+
+
+// import { WalletConnect } from '@components/wallet-connect'
+
+const MetamaskConnect = dynamic(() => import('../components/metamask-connect'), { ssr: false })
+
 export const Navbar = () => {
+	// const { address, connector, isConnected } = useAccount()
+	// console.log('address: ', address);
+	// const { disconnect } = useDisconnect()
+
 	const searchInput = (
 		<Input
 			aria-label="Search"
@@ -50,10 +64,10 @@ export const Navbar = () => {
 			}
 			type="search"
 		/>
-	);
+	)
 
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
+		<NextUINavbar maxWidth="xl" position="sticky" disableAnimation={true}>
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
@@ -82,7 +96,7 @@ export const Navbar = () => {
       <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
 				<NavbarItem className="hidden md:flex">
-					<Button
+					{/* <Button
 						isExternal
 						as={Link}
 						className="text-sm font-normal text-default-600 bg-default-100"
@@ -91,7 +105,8 @@ export const Navbar = () => {
 						variant="flat"
 					>
 						Connect Wallet
-					</Button>
+					</Button> */}
+					<WalletConnect />
 				</NavbarItem>
 				<NavbarItem className="hidden sm:flex gap-2">
 					<ThemeSwitch />
@@ -106,19 +121,13 @@ export const Navbar = () => {
 				<NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
-				{searchInput}
+      <NavbarMenu className="w-[60%] ml-[40%]">
+				<WalletConnect />
 				<div className="mx-4 mt-2 flex flex-col gap-2">
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
-								color={
-									index === 2
-										? "primary"
-										: index === siteConfig.navMenuItems.length - 1
-										? "danger"
-										: "foreground"
-								}
+								color="primary"
 								href="#"
 								size="lg"
 							>

@@ -25,7 +25,7 @@ import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [mainnet],
-  [alchemyProvider({ apiKey: 'yourAlchemyApiKey' }), publicProvider()],
+  [publicProvider()],
 )
 
 const wagmiConfig = createConfig({

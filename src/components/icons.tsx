@@ -222,7 +222,7 @@ export const WalletIcon: React.FC<IconSvgProps> = ({
 }) => {
 	return (
 		<svg width="17" height="18" viewBox="0 0 17 18">
-			<g clip-path="url(#clip0_3086_4481)">
+			<g clipPath="url(#clip0_3086_4481)">
 				<path
 					fill="currentColor"
 					d="M11.2959 10.1801C11.2959 10.9213 11.8989 11.5243 12.64 11.5243H16.9997V8.83594H12.6401C11.8989 8.83597 11.2959 9.43895 11.2959 10.1801ZM13.3751 10.2196C13.3751 10.5189 13.1325 10.7615 12.8333 10.7615C12.534 10.7615 12.2914 10.5189 12.2914 10.2196C12.2914 9.92034 12.534 9.67775 12.8333 9.67775C13.1325 9.67778 13.3751 9.92038 13.3751 10.2196Z"
@@ -240,6 +240,80 @@ export const WalletIcon: React.FC<IconSvgProps> = ({
 				<clipPath id="clip0_3086_4481">
 				<rect width="16.5" height="16.5" fill="white" transform="translate(0.5 0.75)"/>
 				</clipPath>
+			</defs>
+		</svg>
+	)
+}
+
+
+export const MetamaskIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+}) => {
+	return (
+		<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+			<path d="M20.1036 3L13.0801 8.6269L14.3789 5.30711L20.1036 3Z" fill="#E2761B" stroke="#E2761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M3.88965 3L10.8567 8.6802L9.62141 5.30711L3.88965 3Z" fill="#E4761B" stroke="#E4761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M17.5766 16.043L15.7061 19.1343L19.7084 20.3222L20.859 16.1115L17.5766 16.043Z" fill="#E4761B" stroke="#E4761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M3.14844 16.1115L4.29197 20.3222L8.29432 19.1343L6.42373 16.043L3.14844 16.1115Z" fill="#E4761B" stroke="#E4761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M8.06842 10.8196L6.95312 12.6394L10.9272 12.8297L10.7861 8.22314L8.06842 10.8196Z" fill="#E4761B" stroke="#E4761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M15.9248 10.8197L13.1718 8.16992L13.0801 12.8298L17.0471 12.6395L15.9248 10.8197Z" fill="#E4761B" stroke="#E4761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M8.29395 19.1345L10.6798 17.8781L8.61865 16.1421L8.29395 19.1345Z" fill="#E4761B" stroke="#E4761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M13.3135 17.8781L15.7064 19.1345L15.3747 16.1421L13.3135 17.8781Z" fill="#E4761B" stroke="#E4761B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M15.7054 19.1343L13.3125 17.8779L13.5031 19.5607L13.4819 20.2688L15.7054 19.1343Z" fill="#D7C1B3" stroke="#D7C1B3" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M8.29395 19.1343L10.5175 20.2688L10.5034 19.5607L10.6798 17.8779L8.29395 19.1343Z" fill="#D7C1B3" stroke="#D7C1B3" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M10.5531 15.0304L8.5625 14.3985L9.96721 13.7056L10.5531 15.0304Z" fill="#233447" stroke="#233447" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M13.4395 15.0304L14.0253 13.7056L15.4371 14.3985L13.4395 15.0304Z" fill="#233447" stroke="#233447" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M8.29442 19.1343L8.63324 16.043L6.42383 16.1115L8.29442 19.1343Z" fill="#CD6116" stroke="#CD6116" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M15.3672 16.043L15.706 19.1343L17.5766 16.1115L15.3672 16.043Z" fill="#CD6116" stroke="#CD6116" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M17.0471 12.6396L13.0801 12.83L13.4471 15.0305L14.033 13.7056L15.4448 14.3985L17.0471 12.6396Z" fill="#CD6116" stroke="#CD6116" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M8.56254 14.3985L9.9743 13.7056L10.5531 15.0305L10.9272 12.83L6.95312 12.6396L8.56254 14.3985Z" fill="#CD6116" stroke="#CD6116" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M6.95312 12.6396L8.61901 16.1422L8.56254 14.3985L6.95312 12.6396Z" fill="#E4751F" stroke="#E4751F" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M15.4446 14.3985L15.374 16.1422L17.047 12.6396L15.4446 14.3985Z" fill="#E4751F" stroke="#E4751F" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M10.9269 12.8301L10.5527 15.0306L11.0186 17.627L11.1245 14.2082L10.9269 12.8301Z" fill="#E4751F" stroke="#E4751F" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M13.0802 12.8301L12.8896 14.2006L12.9744 17.627L13.4473 15.0306L13.0802 12.8301Z" fill="#E4751F" stroke="#E4751F" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M13.4466 15.0304L12.9736 17.6269L13.3125 17.8781L15.3736 16.1421L15.4442 14.3984L13.4466 15.0304Z" fill="#F6851B" stroke="#F6851B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M8.5625 14.3984L8.61897 16.1421L10.6801 17.8781L11.019 17.6269L10.5531 15.0304L8.5625 14.3984Z" fill="#F6851B" stroke="#F6851B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M13.4822 20.2688L13.5034 19.5607L13.3269 19.3932H10.6657L10.5034 19.5607L10.5175 20.2688L8.29395 19.1343L9.07042 19.8196L10.6445 20.9998H13.3481L14.9292 19.8196L15.7057 19.1343L13.4822 20.2688Z" fill="#C0AD9E" stroke="#C0AD9E" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M13.3133 17.8782L12.9745 17.627H11.0192L10.6804 17.8782L10.5039 19.561L10.6663 19.3934H13.3274L13.5039 19.561L13.3133 17.8782Z" fill="#161616" stroke="#161616" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M20.3996 8.99238L20.9996 5.88579L20.1031 3L13.3125 8.43655L15.9243 10.8198L19.616 11.9848L20.4348 10.9568L20.0819 10.6827L20.6466 10.1269L20.209 9.76142L20.7737 9.29695L20.3996 8.99238Z" fill="#763D16" stroke="#763D16" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M3 5.88579L3.6 8.99238L3.21882 9.29695L3.78353 9.76142L3.35294 10.1269L3.91765 10.6827L3.56471 10.9568L4.37647 11.9848L8.06823 10.8198L10.68 8.43655L3.88941 3L3 5.88579Z" fill="#763D16" stroke="#763D16" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M19.6164 11.9848L15.9246 10.8198L17.047 12.6396L15.374 16.1422L17.5764 16.1117H20.8587L19.6164 11.9848Z" fill="#F6851B" stroke="#F6851B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M8.06844 10.8198L4.37667 11.9848L3.14844 16.1117H6.42373L8.61902 16.1422L6.95314 12.6396L8.06844 10.8198Z" fill="#F6851B" stroke="#F6851B" strokeLinecap="round" strokeLinejoin="round"/>
+			<path d="M13.0799 12.83L13.3129 8.43657L14.3858 5.30713H9.62109L10.6799 8.43657L10.927 12.83L11.0117 14.2158L11.0187 17.6269H12.974L12.9882 14.2158L13.0799 12.83Z" fill="#F6851B" stroke="#F6851B" strokeLinecap="round" strokeLinejoin="round"/>
+		</svg>
+	)
+}
+
+
+export const TokenPocketIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+}) => {
+	return (
+		<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+			<g clipPath="url(#clip0_3095_7617)">
+			<rect width="24" height="24" rx="12" fill="#2980FE"/>
+			<path d="M9.53418 10.2805H9.53725C9.53418 10.2621 9.53418 10.2406 9.53418 10.2222V10.2805Z" fill="#29AEFF"/>
+			<path d="M15.6469 10.8643H12.2637V16.9707C12.2637 17.2593 12.497 17.4927 12.7856 17.4927H15.125C15.4136 17.4927 15.6469 17.2593 15.6469 16.9707V10.8643Z" fill="white"/>
+			<path d="M10.6304 6.49219H10.5168H4.45943C4.17082 6.49219 3.9375 6.72551 3.9375 7.01412V9.13249C3.9375 9.4211 4.17082 9.65442 4.45943 9.65442H5.88089H6.4458V10.2807V16.9859C6.4458 17.2745 6.67913 17.5078 6.96771 17.5078H9.1905C9.47909 17.5078 9.71241 17.2745 9.71241 16.9859V10.2807V10.2224V9.65442H10.2773H10.5076H10.6212C11.4931 9.65442 12.2023 8.94523 12.2023 8.0733C12.2115 7.20138 11.5023 6.49219 10.6304 6.49219Z" fill="white"/>
+			<path d="M15.6504 10.8643V15.1256C15.7671 15.1532 15.8868 15.1747 16.0096 15.1931C16.1815 15.2177 16.3596 15.2331 16.5377 15.2361C16.5469 15.2361 16.5561 15.2361 16.5684 15.2361V11.8467C16.0556 11.8129 15.6504 11.3862 15.6504 10.8643Z" fill="url(#paint0_linear_3095_7617)"/>
+			<path d="M16.6355 6.49219C14.2224 6.49219 12.2637 8.45093 12.2637 10.8641C12.2637 12.9395 13.7097 14.6771 15.65 15.1254V10.8641C15.65 10.3206 16.0921 9.87853 16.6355 9.87853C17.1789 9.87853 17.621 10.3206 17.621 10.8641C17.621 11.3215 17.311 11.7053 16.8873 11.8158C16.8075 11.8373 16.7215 11.8496 16.6355 11.8496V15.2359C16.7215 15.2359 16.8044 15.2329 16.8873 15.2298C19.1837 15.0978 21.0074 13.1943 21.0074 10.8641C21.0105 8.45093 19.0517 6.49219 16.6355 6.49219Z" fill="white"/>
+			<path d="M16.635 15.2361V11.8497C16.6105 11.8497 16.589 11.8498 16.5645 11.8467V15.2361C16.589 15.2361 16.6136 15.2361 16.635 15.2361Z" fill="white"/>
+			</g>
+			<defs>
+			<linearGradient id="paint0_linear_3095_7617" x1="16.6373" y1="13.0508" x2="15.6508" y2="13.0508" gradientUnits="userSpaceOnUse">
+			<stop stopColor="white"/>
+			<stop offset="0.9667" stopColor="white" stopOpacity="0.3233"/>
+			<stop offset="1" stopColor="white" stopOpacity="0.3"/>
+			</linearGradient>
+			<clipPath id="clip0_3095_7617">
+			<rect width="24" height="24" fill="white"/>
+			</clipPath>
 			</defs>
 		</svg>
 	)

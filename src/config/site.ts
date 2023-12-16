@@ -19,10 +19,6 @@ export const siteConfig = {
 	],
 	navMenuItems: [
 		{
-			label: 'Profile',
-			href: '/profile',
-		},
-		{
 			label: 'Stake',
 			href: '/stake',
 		},
