@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Dropdown, Link, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/react'
+import { Button, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/react'
 import { useAccount, useConnect, useDisconnect, useEnsAvatar, useEnsName } from 'wagmi'
 import { truncateString } from '@utils/formatString'
 
@@ -53,9 +53,7 @@ export default function Metamask() {
         >
           Connect Wallet
           {/* {!connector.ready && ' (unsupported)'} */}
-          {isLoading &&
-            connector.id === pendingConnector?.id &&
-            ' (connecting)'}
+          {isLoading && connector.id === pendingConnector?.id && ' (connecting)'}
         </Button>
       ))}
     </>

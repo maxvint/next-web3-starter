@@ -22,6 +22,7 @@ import { WagmiConfig, createConfig, configureChains, mainnet } from 'wagmi'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
+import { TokenPocketConnector } from '@lib/tp-connector'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [mainnet],
@@ -32,10 +33,12 @@ const wagmiConfig = createConfig({
 	autoConnect: true,
 	connectors: [
 		new MetaMaskConnector({ chains }),
+		new TokenPocketConnector({ chains, options: {} })
 	],
 	publicClient,
 	webSocketPublicClient,
 })
+
 // appName: 'Puffer',
 //infuraId: process.env.NEXT_PUBLIC_INFURA_ID,
 //alchemyId:  process.env.NEXT_PUBLIC_ALCHEMY_ID,

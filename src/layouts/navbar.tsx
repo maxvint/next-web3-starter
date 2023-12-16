@@ -33,12 +33,8 @@ import {
 import { Logo } from '@components/icons'
 
 import { useAccount, useConnect, useDisconnect, useEnsAvatar, useEnsName } from 'wagmi'
-import WalletConnect from '@components/wallet-connect'
 
-
-// import { WalletConnect } from '@components/wallet-connect'
-
-const MetamaskConnect = dynamic(() => import('../components/metamask-connect'), { ssr: false })
+const WalletConnect = dynamic(() => import('../components/wallet-connect'), { ssr: false })
 
 export const Navbar = () => {
 	// const { address, connector, isConnected } = useAccount()
